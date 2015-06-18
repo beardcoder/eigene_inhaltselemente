@@ -1,0 +1,18 @@
+tt_content.video_content = FLUIDTEMPLATE
+tt_content.video_content {
+	file = EXT:eigene_inhaltselemente/Resources/Private/Templates/VideoContent.html
+	variables {
+		previewImage = FILES
+		previewImage {
+			references {
+				table = tt_content
+				fieldName = image
+			}
+			renderObj = IMAGE
+			renderObj {
+				file.import.data = file:current:uid
+				file.treatIdAsReference = 1
+			}
+		}
+	}
+}
