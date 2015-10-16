@@ -8,6 +8,7 @@ tt_content.video_content {
 				table = tt_content
 				fieldName = image
 			}
+
 			renderObj = IMAGE
 			renderObj {
 				file.import.data = file:current:uid
