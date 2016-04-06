@@ -1,6 +1,6 @@
 <?php
 
-$EM_CONF[$_EXTKEY] = array(
+$EM_CONF[$_EXTKEY] = [
     'title' => 'Creativeworkspace Extension',
     'description' => 'Templates für Creativeworkspace',
     'category' => 'misc',
@@ -8,4 +8,4 @@ $EM_CONF[$_EXTKEY] = array(
     'dependencies' => 'cms,extbase,fluid',
     'state' => 'beta',
     'author' => 'Markus Sommer',
-);
+];

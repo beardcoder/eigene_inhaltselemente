@@ -1,8 +1,8 @@
 <?php
 
-$tcaTtContent = array(
-    'types' => array(
-        'video_content' => array(
+$tcaTtContent = [
+    'types' => [
+        'video_content' => [
             'showitem' => '--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.general;general,
             bodytext;Youtube Video URL,
             image;Thumbnail,
@@ -12,24 +12,24 @@ $tcaTtContent = array(
             --palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.visibility;visibility,
             --palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.access;access,
             --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.extended'
-        )
-    ),
-    'columns' => array(
-        'CType' => array(
-            'config' => array(
-                'items' => array(
-                    'video_content' => array(
+        ]
+    ],
+    'columns' => [
+        'CType' => [
+            'config' => [
+                'items' => [
+                    'video_content' => [
                         'Video Element',
                         // Name des Inhaltselementes
                         'video_content',
                         // TCA Name des Inhaltselementes
                         'EXT:eigene_inhaltselemente/Resources/Public/Images/Backend/ContentElements/VideoContent.png'
                         // Bild des Inhaltelementes
-                    )
-                )
-            )
-        )
-    )
-);
+                    ]
+                ]
+            ]
+        ]
+    ]
+];
 
 \TYPO3\CMS\Core\Utility\ArrayUtility::mergeRecursiveWithOverrule($GLOBALS['TCA']['tt_content'], $tcaTtContent);
